@@ -23,7 +23,6 @@
 .profile-picture {
   width: 36px;
   border-radius: 25px;
-
 }
 
 .thumbnail-row {
@@ -48,13 +47,12 @@
   row-gap: 10px;
 }
 
-@media (max-width: 750px) {
+@media (min-width: 501) and (max-width: 750px) {
   .video-grid {
     grid-template-columns: 1fr 1fr;
   }
-  
 }
-@Media (min-width: 751px) and (max-width: 999px) {
+@media (min-width: 751px) and (max-width: 999px) {
   .video-grid {
     grid-template-columns: 1fr 1fr 1fr;
   }
@@ -63,7 +61,12 @@
   .video-grid {
     grid-template-columns: 1fr 1fr 1fr 1fr;
   }
-  
+}
+
+@media (max-width: 500px) {
+  .video-grid {
+    grid-template-columns: 1fr;
+  }
 }
 
 .video-time {
